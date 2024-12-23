@@ -5,7 +5,7 @@ import productsRoutes from './routes/products/index'
  const app = express();
 
  app.use(urlencoded({extended: false}));   
- app.use(json(   ));
+ app.use(json());
 
 
  app.get('/', (req, res) => {
