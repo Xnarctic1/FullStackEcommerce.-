@@ -5,11 +5,11 @@ import {
     createProduct, 
     updateProduct, 
     deleteProduct  
-} from './productsController'; 
+} from './productsController.js'; 
 
-import { validateData } from '../../middlewares/validationMiddleware';  
-import { createProductSchema, updateProductSchema } from '../../db/productsSchema';
-import { verifyToken, verifySeller } from '../../middlewares/authMiddleware';
+import { validateData } from '../../middlewares/validationMiddleware.js';  
+import { createProductSchema, updateProductSchema } from '../../db/productsSchema.js';
+import { verifyToken, verifySeller } from '../../middlewares/authMiddleware.js';
  
  
 //Products endpoints  

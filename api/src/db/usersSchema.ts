@@ -4,7 +4,7 @@ import { createInsertSchema } from 'drizzle-zod';
  
  
  export const usersTable = pgTable('users', {
-      id: integer().primaryKey().generatedAlwaysAsIdentity(),
+      id: integer().primaryKey().primaryKey(),
       email: varchar({length: 255}).notNull().unique(),
       password: varchar({length: 255}).notNull(),  
       role: varchar({length: 255}).notNull().default('user'), 
@@ -13,7 +13,7 @@ import { createInsertSchema } from 'drizzle-zod';
  });   
 
  export const createUserSchema = createInsertSchema(usersTable).omit({
-     id:true,
+     id: true,
      role: true,  
 });
 
