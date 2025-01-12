@@ -4,13 +4,13 @@ import { integer,
          text,
          doublePrecision
          } from 'drizzle-orm/pg-core';
-import { createInsertSchema, CreateInsertSchema } from 'drizzle-zod';
+import { createInsertSchema } from 'drizzle-zod';
  
 
 export const productsTable = pgTable("products", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   name: varchar({ length: 255 }).notNull(),
-  description: text(),
+  description: text(),  
   image: varchar({ length: 255 }),
   price: doublePrecision().notNull(),   
 });
