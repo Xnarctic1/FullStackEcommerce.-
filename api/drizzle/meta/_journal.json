@@ -15,6 +15,27 @@
       "when": 1736245880367,
       "tag": "0001_peaceful_cyclops",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1737458266969,
+      "tag": "0002_complex_boomer",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1737462130156,
+      "tag": "0003_fancy_slapstick",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1737462587436,
+      "tag": "0004_past_valeria_richards",
+      "breakpoints": true
     }
   ]
 }
