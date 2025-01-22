@@ -41,4 +41,8 @@ export const insertOrdersItemsSchema =  createInsertSchema(orderItemsTable).omit
    items: z.array(insertOrdersItemsSchema),
 
  });
+
+export const updateOrderSchema = createInsertSchema(ordersTable).pick({
+   status: true,
+})
   
